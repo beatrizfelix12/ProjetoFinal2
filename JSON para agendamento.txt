@@ -1,0 +1,39 @@
+{
+    "nome" : "Danrlei Skywalker Jr. III",
+    "cpf" : "11122211122",
+    "dataNascimento" : "01/01/1900",
+    "sexo" : "M",
+    "agendamentos" : [
+        {
+            "data" : "16/07/2023",
+            "horario" : "7:00"
+        }
+    ],
+    "cobrancas" : [
+        {
+            "valor" : "R$ 39,90",
+            "dataExpedicao" : "05/07/2023",
+            "dataVencimento" : "15/07/2013"
+        }
+    ],
+    "contatos" : [
+        {
+            "telefone" : "81 81841-0001",
+            "email" : "eu@danrlei.com",
+            "nomeContatoDeEmergencia" : "Maria do Desterro",
+            "numeroContatoDeEmergencia" : "81 11111-5555"
+        }
+    ],
+    "enderecos" : [
+        {
+            "rua" : "Charmosa",
+            "bairro" : "Agradabilidade",
+            "numero" : "007",
+            "cep" : "55050-210",
+            "uf" : "PE",
+            "cidade" : "Vale Alegre",
+            "complemento" : "Casa",
+	    "pontoDeReferencia" : "Perto da pracinha"
+        }
+    ]
+}

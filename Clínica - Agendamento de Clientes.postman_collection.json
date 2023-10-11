@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "bc96f072-da0b-4a45-b96f-4add46d93043",
+		"name": "Clínica - Agendamento de Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28239456"
+	},
+	"item": [
+		{
+			"name": "Salvar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Christopher O'Hara\",\r\n    \"cpf\" : \"95175312365\",\r\n    \"dataNascimento\" : \"15/11/2007\",\r\n    \"sexo\" : \"M\",\r\n    \"agendamentos\" : [\r\n        {\r\n            \"data\" : \"20/07/2023\",\r\n            \"horario\" : \"11:00\"\r\n        }\r\n    ],\r\n    \"cobrancas\" : [\r\n        {\r\n            \"valor\" : \"R$ 200,90\",\r\n            \"dataExpedicao\" : \"08/07/2023\",\r\n            \"dataVencimento\" : \"18/07/2013\"\r\n        }\r\n    ],\r\n    \"contatos\" : [\r\n        {\r\n            \"telefone\" : \"81 77741-0001\",\r\n            \"email\" : \"calistohara@gmail.com\",\r\n            \"nomeContatoDeEmergencia\" : \"Mary\",\r\n            \"numeroContatoDeEmergencia\" : \"81 55555-9696\"\r\n        }\r\n    ],\r\n    \"enderecos\" : [\r\n        {\r\n            \"rua\" : \"Charmosa\",\r\n            \"bairro\" : \"Agradabilidade\",\r\n            \"numero\" : \"500\",\r\n            \"cep\" : \"55050-210\",\r\n            \"uf\" : \"PE\",\r\n            \"cidade\" : \"Vale Alegre\",\r\n            \"complemento\" : \"Casa\",\r\n\t    \"pontoDeReferencia\" : \"Perto da pracinha\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/salvar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"salvar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 352,\r\n    \"nome\": \"Christopher O'Hara Santos\",\r\n    \"cpf\": \"95175312365\",\r\n    \"dataNascimento\": \"15/11/2007\",\r\n    \"sexo\": \"M\",\r\n    \"agendamentos\": [\r\n        {\r\n            \"id\": 252,\r\n            \"data\": \"20/07/2023\",\r\n            \"horario\": \"11:00\"\r\n        }\r\n    ],\r\n    \"cobrancas\": [\r\n        {\r\n            \"id\": 252,\r\n            \"valor\": \"R$ 200,90\",\r\n            \"dataExpedicao\": \"08/07/2023\",\r\n            \"dataVencimento\": \"18/07/2013\"\r\n        }\r\n    ],\r\n    \"contatos\": [\r\n        {\r\n            \"id\": 252,\r\n            \"telefone\": \"81 77741-0001\",\r\n            \"email\": \"calistohara@gmail.com\",\r\n            \"nomeContatoDeEmergencia\": \"Mary\",\r\n            \"numeroContatoDeEmergencia\": \"81 55555-9696\"\r\n        }\r\n    ],\r\n    \"enderecos\": [\r\n        {\r\n            \"id\": 352,\r\n            \"rua\": \"Charmosa\",\r\n            \"bairro\": \"Agradabilidade\",\r\n            \"numero\": \"500\",\r\n            \"cep\": \"55050-210\",\r\n            \"uf\": \"PE\",\r\n            \"cidade\": \"Vale Alegre\",\r\n            \"complemento\": \"Casa\",\r\n            \"pontoDeReferencia\": \"Perto da pracinha\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/editar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por CPF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/buscar/95175312365",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"buscar",
+						"95175312365"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/buscar/95175312365",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"buscar",
+						"95175312365"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar por CPF (dando erro)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/deletar/95175312365",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"deletar",
+						"95175312365"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar todos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/clientes/deletar-todos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"deletar-todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
