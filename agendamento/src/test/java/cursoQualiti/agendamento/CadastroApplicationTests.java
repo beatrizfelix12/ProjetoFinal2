@@ -1,4 +1,4 @@
-package moderna.agendamento;
+package cursoQualiti.agendamento;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

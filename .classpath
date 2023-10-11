@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="agendamento/src/test/java"/>
+	<classpathentry kind="lib" path="agendamento/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="agendamento/bin/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="agendamento/target/test-classes"/>
+</classpath>
